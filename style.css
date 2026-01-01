@@ -1377,12 +1377,11 @@ body {
   
     border-right: 0.6vmin solid #6bf0ff;  /* Cursor */
   
-    /* All delays set to 0s — animations start immediately after button tap */
     animation:
       fade-in 0.5s 7s forwards,
       type-text 14s steps(250, end) 4s forwards,
       blink-caret 0.8s step-end 4s infinite,
-      remove-cursor 0.1s 14s forwards;  /* Cursor disappears after typing ends */
+      remove-cursor 0.1s 11.5s forwards;  /* Cursor disappears after typing ends */
   }
   
   @keyframes fade-in {
@@ -1391,7 +1390,7 @@ body {
   
   @keyframes type-text {
     from { width: 0; }
-    to   { width: 60ch; }  /* Adjust higher if your message is longer */
+    to   { width: 60ch; }
   }
   
   @keyframes blink-caret {
@@ -1428,4 +1427,5 @@ body {
     font-size: 4vmin;
     margin-top: 2vmin;
     opacity: 0.9;
+
   }
